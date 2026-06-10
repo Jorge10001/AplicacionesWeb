@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Estudiantes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registro de Estudiantes</h2>
+        <form id="studentForm" novalidate>
+            
+            <div class="form-group">
+                <label for="cedula">Cédula:</label>
+                <input type="text" id="cedula" name="cedula" required>
+                <span class="error-msg" id="error-cedula"></span>
+            </div>
+
+            <div class="form-group-row">
+                <div class="form-group">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                    <span class="error-msg" id="error-apellidos"></span>
+                </div>
+                <div class="form-group">
+                    <label for="nombres">Nombres:</label>
+                    <input type="text" id="nombres" name="nombres" required>
+                    <span class="error-msg" id="error-nombres"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+                <span class="error-msg" id="error-direccion"></span>
+            </div>
+
+            <div class="form-group-row">
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" id="telefono" name="telefono" required>
+                    <span class="error-msg" id="error-telefono"></span>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                    <span class="error-msg" id="error-correo"></span>
+                </div>
+            </div>
+
+            <div class="form-group-row">
+                <div class="form-group">
+                    <label for="facultad">Facultad:</label>
+                    <input type="text" id="facultad" name="facultad" required>
+                    <span class="error-msg" id="error-facultad"></span>
+                </div>
+                <div class="form-group">
+                    <label for="nivel">Nivel (Semestre):</label>
+                    <input type="text" id="nivel" name="nivel" required>
+                    <span class="error-msg" id="error-nivel"></span>
+                </div>
+                <div class="form-group">
+                    <label for="paralelo">Paralelo:</label>
+                    <input type="text" id="paralelo" name="paralelo" required>
+                    <span class="error-msg" id="error-paralelo"></span>
+                </div>
+            </div>
+
+            <button type="submit">Registrar Estudiante</button>
+        </form>
+
+        <h3>Estudiantes Registrados</h3>
+        <div class="table-container">
+            <table id="studentsTable">
+                <thead>
+                    <tr>
+                        <th>Cédula</th>
+                        <th>Estudiante</th>
+                        <th>Correo</th>
+                        <th>Facultad</th>
+                        <th>Nivel/Paralelo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
