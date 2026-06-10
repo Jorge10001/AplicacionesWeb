@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  color: #333;
+}
+
+/* ===== ENCABEZADO ===== */
+header {
+  background: #3d5166;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 14px;
+  color: #cdd8e3;
+}
+
+header .contacto {
+  margin-top: 8px;
+}
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+.contenido {
+  max-width: 750px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+/* ===== TARJETAS ===== */
+.tarjeta {
+  background: white;
+  border-radius: 6px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta h2 {
+  font-size: 17px;
+  color: #3d5166;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #3d5166;
+  padding-bottom: 6px;
+}
+
+/* ===== ENTRADAS ===== */
+.entrada {
+  margin-bottom: 15px;
+}
+
+.entrada h3 {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 2px;
+}
+
+.entrada .fecha {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.entrada p {
+  font-size: 13px;
+  color: #555;
+}
+
+/* ===== BOTÓN ===== */
+.btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 7px 18px;
+  background: #3d5166;
+  color: white;
+  border-radius: 4px;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #2c3e50;
+}
+
+/* ===== TABLA REFERENCIAS ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+th {
+  background: #3d5166;
+  color: white;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+  color: #555;
+}
+
+tr:nth-child(even) td {
+  background: #f9f9f9;
+}
