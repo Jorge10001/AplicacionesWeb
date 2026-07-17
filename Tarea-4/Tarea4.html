@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var numero_uno = parseFloat(prompt("Ingrese el primer numero: "));
+        var numero_dos = parseFloat(prompt("Ingrese el segundo numero: "));
+
+        for (var x = 1; x <= 5; x++) {
+            switch(x) {
+                case 1:
+                    alert("Suma: " + (numero_uno + numero_dos));
+                    break;
+                case 2:
+                    alert("Resta: " + (numero_uno - numero_dos));
+                    break;
+                case 3:
+                    alert("Multiplicación: " + (numero_uno * numero_dos));
+                    break;
+                case 4: 
+                    alert("División: " + (numero_uno / numero_dos));
+                    break;
+                case 5: 
+                    alert("Módulo: " + (numero_uno % numero_dos));
+                    break;
+                default:
+                    alert("Intento no válido");
+            }
+        }
+    </script>
+</body>
+</html>
